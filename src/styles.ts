@@ -126,13 +126,25 @@ export const TabItem = styled.section<ITab>`
     safeGet(styleProps, "justifyTabs", defaultTabBarStyle.justifyTabs) ===
     "space-evenly"
       ? `0`
-      : " 0 20px"};
+      : " 0 1.5rem"};
 
   cursor: pointer;
   line-height: ${({ styleProps }) =>
     tabSizes[styleProps.size || defaultTabBarStyle.size].height};
   text-align: ${({ styleProps }) =>
     styleProps.alignHeader || defaultTabBarStyle.alignHeader};
+  border-bottom: ${({ isSelected, styleProps }) =>
+    isSelected
+      ? safeGet(
+          styleProps,
+          "activeBorderBottom",
+          null
+        )
+      : safeGet(
+          styleProps,
+          "borderBottom",
+          null
+        )};
   ${({ tabItemCSS }) => tabItemCSS}
 `;
 

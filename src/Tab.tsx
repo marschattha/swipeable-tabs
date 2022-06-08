@@ -20,6 +20,8 @@ export const TabHeader: React.FC<TabProps> = ({
   styleProps,
   tabItemCSS = ""
 }) => {
+  console.log('hello from tab')
+  console.log(styleProps)
   return (
     <TabItem
       key={index}
