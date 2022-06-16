@@ -33,8 +33,6 @@ const TabGroup: React.FC<TabGroupProps> = ({
   tabItemCSS = "",
   blacklistedElement = undefined
 }) => {
-  console.log('hello from tabs')
-  console.log(styleProps)
   const inkBarRef = useRef<HTMLHRElement>(null);
   const tabLabels = useRef<Array<string>>([]);
   const handleSwipe = useCallback(

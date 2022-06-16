@@ -87,6 +87,7 @@ export const TabsList = styled.section<ITabsList>`
   display: flex;
   height: inherit;
   text-align: center;
+  overflow-x: auto;
 `;
 
 export const TabGroupContainer = styled.div<ITabGroup>`
