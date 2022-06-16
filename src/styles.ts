@@ -88,6 +88,11 @@ export const TabsList = styled.section<ITabsList>`
   height: inherit;
   text-align: center;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-slider-thumb {
+    display: none;
+  }
 `;
 
 export const TabGroupContainer = styled.div<ITabGroup>`
