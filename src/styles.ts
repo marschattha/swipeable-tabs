@@ -90,7 +90,7 @@ export const TabsList = styled.section<ITabsList>`
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  &::-webkit-slider-thumb {
+  &::-webkit-scrollbar {
     display: none;
   }
 `;
